@@ -1,0 +1,104 @@
+/* CSS.css */
+
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+/* Font styling */
+.interactive-input {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 600px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.plus-jakarta-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: aliceblue;
+  font-size: 31px;
+}
+
+.plus-jakarta-sans-bold {
+  font-weight: 700;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  top: -0.7em; /* Adjust the position as needed */
+  margin-left: 4px; /* Adjust the margin as needed */
+}
+
+.interactive-input .help-text {
+  position: absolute;
+  top: 140px; /* Adjusted position */
+  left: 90px; /* Adjusted position */
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.faq-text {
+  position: absolute;
+  bottom: 180px;
+  left: 20px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(255, 255, 255); /* Change color as needed */
+}
+
+.faq-container {
+  position: absolute;
+  bottom: 60px; /* Adjusted position */
+  left: 20px; /* Adjusted position */
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  z-index: 100;
+  max-height: 200px; /* Adjust as needed */
+  overflow-y: auto; /* Enable scrolling */
+  backdrop-filter: blur(10px);
+}
+
+/* Hide scrollbar */
+.faq-container::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar */
+}
